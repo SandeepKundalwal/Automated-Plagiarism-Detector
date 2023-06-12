@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class Services {
-    public static final String outputFilePath = "C:\\Users\\DELL\\Desktop\\TA Duty\\IC 152\\Plagiarism Evaluation\\Assignment-7\\Plagiarism Report\\PlagiarismSummary.txt";
+    public static final String outputFilePath = "";
     public static final String DATA_SEPARATOR  = "------->";
     public static final String SPACE  = " ";
 
@@ -28,7 +28,7 @@ public class Services {
         /**
          * directory where all the plagiarism reports are present
          */
-        Path directory = Paths.get("C:\\Users\\DELL\\Desktop\\TA Duty\\IC 152\\Plagiarism Evaluation\\Assignment-7\\Plagiarism Report\\");
+        Path directory = Paths.get("");
         Files.walk(directory).forEach(path -> listFiles.add(traverseDirectory(path.toFile())));
 
         /**
