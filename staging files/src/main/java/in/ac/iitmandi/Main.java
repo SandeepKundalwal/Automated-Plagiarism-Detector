@@ -16,10 +16,14 @@ public class Main {
         Unzip unzip = new Unzip();
         TransferFiles transferFiles = new TransferFiles();
 
-
-        String zipFilePath = "C:\\Users\\DELL\\Desktop\\TA Duty\\IC 152\\Plagiarism Evaluation\\Assignment-8\\Assignment8";
-        String destDir = "C:\\Users\\DELL\\Desktop\\TA Duty\\IC 152\\Plagiarism Evaluation\\Assignment-8\\Assignment8_Unzipped";
-        String finalDest = "C:\\Users\\DELL\\Desktop\\TA Duty\\IC 152\\Plagiarism Evaluation\\Assignment-8\\Assignment8_Eval_Out\\";
+        /*
+        * zipFilePath - where the zip folders are present
+        * destDir - destination directory where the unzipped files will be moved
+        * finalDest - destination where the files inside the unzipped folder will be moved with proper naming convention i.e <rollno.>_<problemno.>
+        */
+        String zipFilePath = "";
+        String destDir = "";
+        String finalDest = "";
 
         unzip.unzipAllFiles(zipFilePath, destDir);
         Map<String, List<File>> asgFileMap = transferFiles.getAllAssignmentFiles(destDir);
